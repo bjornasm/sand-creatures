@@ -56,7 +56,7 @@ def make_creatures(sand):
       rgba = colors[w%nc] + [0.0005]
       sand.set_rgba(rgba)
 
-      sand.paint_strokes(l1, l2, GRAINS)
+      sand.paint_strokes(l1, l2, ones(len(l1), 'in')*GRAINS)
 
       # pnum += 1
 
